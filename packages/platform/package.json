@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "pnpm run clean",
-    "build": "nest build",
+    "build": "node init && nest build",
     "test": "vitest run",
     "test:watch": "vitest"
   },

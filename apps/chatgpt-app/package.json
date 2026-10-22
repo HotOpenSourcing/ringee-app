@@ -1,17 +1,17 @@
 {
   "name": "@ringee-io/chatgpt-app",
   "version": "0.1.0",
-  "description": "Ringee ChatGPT App — polished visual components (contacts, leads, call sessions, callbacks, meetings, outcomes) backed by the Ringee MCP, plus the MCP server/adapter that connects ChatGPT to the existing Ringee backend.",
+  "description": "Ringee ChatGPT App \u2014 polished visual components (contacts, leads, call sessions, callbacks, meetings, outcomes) backed by the Ringee MCP, plus the MCP server/adapter that connects ChatGPT to the existing Ringee backend.",
   "license": "AGPL-3.0-or-later",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev --port 4202",
-    "build": "next build",
-    "start": "next start --port 4202",
+    "dev": "node init && next dev --port 4202",
+    "build": "node init && next build",
+    "start": "node init && next start --port 4202",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "build:widgets": "node scripts/build-widgets.mjs",
+    "build:widgets": "node init && node scripts/build-widgets.mjs",
     "mcp": "tsx src/server/serve.ts",
     "mcp:prod": "pnpm build:widgets && tsx src/server/serve.ts"
   },

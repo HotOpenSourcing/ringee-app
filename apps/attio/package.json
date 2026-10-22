@@ -5,8 +5,8 @@
   "version": "0.0.1",
   "scripts": {
     "attio": "attio",
-    "dev": "attio dev",
-    "build": "attio build",
+    "dev": "node init && attio dev",
+    "build": "node init && attio build",
     "format": "biome format --write src/",
     "format:check": "biome format src/",
     "clean": "rm -rf lib && rm -rf dist",

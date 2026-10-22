@@ -3,10 +3,10 @@
   "version": "0.1.8",
   "private": true,
   "type": "module",
-  "description": "Ringee browser extension — modern, low-cost outbound dialing. Call any number on any page with the real Ringee dialer over WebRTC.",
+  "description": "Ringee browser extension \u2014 modern, low-cost outbound dialing. Call any number on any page with the real Ringee dialer over WebRTC.",
   "scripts": {
-    "dev": "node scripts/dev-watch.mjs",
-    "build": "vite build",
+    "dev": "node init && node scripts/dev-watch.mjs",
+    "build": "node init && vite build",
     "package": "node scripts/pack.mjs",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",

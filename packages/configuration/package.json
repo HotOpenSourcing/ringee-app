@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "pnpm run clean",
-    "build": "swc src -d dist"
+    "build": "node init && swc src -d dist"
   },
   "devDependencies": {
     "@swc/cli": "^0.7.8",
