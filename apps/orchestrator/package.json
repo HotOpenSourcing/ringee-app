@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "nest build",
-    "start": "node dist/apps/orchestrator/src/main.js",
-    "dev": "nest start --watch --env-file ../../.env"
+    "build": "node init && nest build",
+    "start": "node init && node dist/apps/orchestrator/src/main.js",
+    "dev": "node init && nest start --watch --env-file ../../.env"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.96.0",

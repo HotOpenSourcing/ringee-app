@@ -5,10 +5,10 @@
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "pnpm run clean",
-    "build": "nest build",
-    "start:prod": "node dist/apps/backend/src/main",
+    "build": "node init && nest build",
+    "start:prod": "node init && node dist/apps/backend/src/main",
     "generate:number-pricing": "TS_NODE_PROJECT=tsconfig.json dotenv -e ../../.env -- ts-node -r tsconfig-paths/register scripts/generate-number-pricing.ts",
-    "dev": "nest start --watch --env-file ../../.env"
+    "dev": "node init && nest start --watch --env-file ../../.env"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.96.0",
